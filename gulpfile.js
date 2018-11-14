@@ -14,7 +14,7 @@ var gulp          = require('gulp'),
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		proxy: "localhost:8888/GULP_project/git_fist/app",
+		proxy: "localhost:8888/GULP_project/land-chloboda/app",
 		// server: {
 		// 	baseDir: 'app'
 		// },
