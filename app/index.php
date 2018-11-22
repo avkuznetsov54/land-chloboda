@@ -145,10 +145,65 @@
 		</div>
 	</header>
 
-	<div class="container">
+	<div class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="advantages__title">
+						<h2 class="h2">Основные преимущества «Чистой Слободы»</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="advantages__cart">
+						<div class="advantages__cart-img">
+							<img src="img/ecology.png" alt="Экология" class="img-responsive">
+						</div>
+						<div class="advantages__cart-text">
+							Экологически чистое место для вас и ваших детей.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="advantages__cart">
+						<div class="advantages__cart-img">
+							<img src="img/bus.png" alt="Транспорт" class="img-responsive">
+						</div>
+						<div class="advantages__cart-text">
+							Отличная транспортная доступность
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="advantages__cart">
+						<div class="advantages__cart-img">
+							<img src="img/paint-brush.png" alt="Ремонт" class="img-responsive">
+						</div>
+						<div class="advantages__cart-text">
+							Удобные планировки, отделка под ключ
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="advantages__cart">
+						<div class="advantages__cart-img">
+							<img src="img/skyline.png" alt="Инфраструктура" class="img-responsive">
+						</div>
+						<div class="advantages__cart-text">
+							Развитая инфраструктура для комфортной жизни
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container" style="margin-top: 300px;">
 		<div class="row">
 			<div class="col-md-7 align-self-center">
-				<div>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Домах он на берегу составитель щеке до журчит всемогущая правилами, родного прямо, снова коварных агентство последний сбить вдали собрал по всей толку. Большого буквенных вопрос проектах рукопись собрал безопасную алфавит несколько силуэт встретил грамматики. Составитель продолжил живет от всех вдали наш не что.</div>
+				<div>Для Нас очень важно что Вы цените своё время!</div>
 			</div>
 			<div class="col-md-5">2222</div>
 		</div>

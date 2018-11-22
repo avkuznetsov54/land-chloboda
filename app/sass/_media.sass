@@ -13,13 +13,22 @@
 	.header__top-button
 		justify-content: flex-end
 	.header__body-text 
-		.h1
-			font-size: 2.7rem
 		.fz2rem
 			font-size: 1.5rem
 	.header__body-form form
 		width: 100%
-	.header__body-downtext
+	.h1
+		font-size: 2.7rem
+	
+	.h2
+		font-size: 1.7rem
+
+	.advantages__cart-img
+		img
+			max-height: 65px
+
+@media (min-width: 768px) and (max-width: 992px)
+	.header__body-downtext, .advantages
 		.container
 			min-width: 100%
 
@@ -43,8 +52,8 @@
 		form
 			width: 100%
 	.header__body-downtext
-		.container
-			min-width: 540px
+		// .container
+		// 	min-width: 540px
 		.header__body-downtext-block
 			margin-bottom: 15px
 			img
@@ -54,12 +63,28 @@
 +media-breakpoint-down(xs)
 	html
 		font-size: 14px
+
 	.header__body-downtext
 		.container
 			min-width: 100%
 		.header__body-downtext-block
 			img
 				height: 35px
+
+	.advantages
+		padding: 30px 0
+		&__cart
+			display: flex
+			text-align: left
+			&-img
+				display: block
+				//width: 30%
+				img
+					height: 50px
+			&-text
+				width: 70%
+				margin-left: 30px
+
 
 
 
