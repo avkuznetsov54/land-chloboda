@@ -8,12 +8,59 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	.header__top-phone
+		display: none
+	.header__top-button
+		justify-content: flex-end
+	.header__body-text 
+		.h1
+			font-size: 2.7rem
+		.fz2rem
+			font-size: 1.5rem
+	.header__body-form form
+		width: 100%
+	.header__body-downtext
+		.container
+			min-width: 100%
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.header__top-logo
+		display: none
+	.header__top-button
+		margin-top: 4px
+		justify-content: center
+	.header__body
+		min-height: 1000px
+	// .animation-icon-box
+	// 	animation: shake 2s infinite
+	.header__body-text, .header__body-form
+		min-height: 300px
+	.header__body-text
+		text-align: center
+	.header__body-form
+		margin-top: 0
+		form
+			width: 100%
+	.header__body-downtext
+		.container
+			min-width: 540px
+		.header__body-downtext-block
+			margin-bottom: 15px
+			img
+				height: 45px
 
 // ≥576px
 +media-breakpoint-down(xs)
+	html
+		font-size: 14px
+	.header__body-downtext
+		.container
+			min-width: 100%
+		.header__body-downtext-block
+			img
+				height: 35px
+
 
 
 /*==========  Mobile First  ==========*/

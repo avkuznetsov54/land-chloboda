@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
 		notify: false,
 		// open: false, // открытие в браузере после запуска
 		// online: false, // Work Offline Without Internet Connection
-		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+		// tunnel: true, tunnel: "land-chloboda", // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 

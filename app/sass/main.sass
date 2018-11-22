@@ -9,8 +9,10 @@
 	background-color: $accent
 	color: #fff
 
-body
+html
 	font-size: 16px
+
+body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -37,6 +39,201 @@ body
 
 b, strong
 	font-weight: bold
+
+//Custom code
+.fz2rem
+	font-size: 2rem
+
+.fz08rem
+	font-size: 0.8rem
+
+button:focus
+	outline: none
+
+.header
+	&__top
+		z-index: 20
+		background-color: rgba(255,255,255,1)
+		height: $height-top-line
+		position: fixed
+		width: 100%
+		&-logo
+			height: $height-top-line
+			//position: fixed
+			display: flex
+			align-items: center
+			&-img
+				height: $height-top-line - 10px
+				width: auto
+		&-phone
+			white-space: nowrap
+			height: $height-top-line
+			display: flex
+			align-items: center
+			justify-content: center
+			&-top
+				text-decoration: none
+				font-size: 1.5rem
+				color: #000
+				display: contents
+				&:hover
+					text-decoration: none
+				i.fa-phone
+					transform: rotate(90deg)
+	&__top-button
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+	&__body
+		position: relative
+		height: 100vh
+		min-height: 700px
+		background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url(../img/top-bg.jpg)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		//background-color: #464646
+		//filter: brightness(50%)
+		&-text
+			color: #ffffff
+			//text-align: center
+			display: flex
+			align-items: center
+			justify-content: center
+			min-height: 500px
+			margin-top: $height-top-line
+			.h1
+				font-size: 4rem
+				line-height: 1.3
+		&-form
+			min-height: 500px
+			margin-top: $height-top-line
+			display: flex
+			align-items: center
+			justify-content: center
+			form
+				padding: 20px 20px;
+				width: 80%
+				float: right
+				text-align: center
+				background: rgba(30, 30, 30, 0.35)
+				border-radius: 5px
+				.default-form-title
+					font-size: 1rem
+					margin-bottom: 20px
+					color: #ffffff
+				.field
+					position: relative
+					margin-right: 6px
+					display: block
+					width: 100%
+					input
+						margin-bottom: 20px
+						width: 100%
+						font-size: 13px
+						border: transparent
+						border-radius: 3px
+						background: #ffffff
+						padding: 10px 15px
+						height: 40px
+						border: 1px solid #e0e0e0
+						transition: 0.2s ease-in
+					.fas
+						position: absolute
+						right: 10px
+						top: 12px
+						color: #999
+				.declaration
+					color: #888888
+					font-size: 0.6rem
+					margin-top: 20px
+					a
+						color: #888888
+		&-downtext
+			position: absolute
+			bottom: 0
+			color: #fff
+			background: rgba(0,0,0,.2)
+			width: 100%
+			padding: 20px 0
+			.header__body-downtext-block
+				display: inline-flex
+				img
+					height: 65px
+					margin: 0 15px 0 0
+				&-title
+					line-height: 1.2
+					font-weight: 700
+					font-size: 1rem
+				&-anons
+					margin-top: 10px
+					font-size: 0.7rem
+
+
+// BEGIN анимация иконки телефона
+.animation-icon-box,
+.animation-icon-box:after,
+.animation-icon-box:before
+	width: 30px
+	height: 30px
+	border-radius: 35px
+	//background-color: #2196F3
+
+.animation-icon-box
+	display: flex
+	justify-content: center
+	align-items: center
+	//animation: shake 2s infinite
+
+.header__top-phone:hover .animation-icon-box
+	animation: shake 2s infinite
+
+.animation-icon-box:after,
+.animation-icon-box:before
+	content: ''
+	position: absolute
+
+@keyframes shake
+	0%
+		transform: rotate(0)
+	25%
+		transform: rotate(15deg)
+	50%
+		transform: rotate(-15deg)
+	75%
+		transform: rotate(15deg)
+	100%
+		transform: rotate(-15deg)
+// END анимация иконки телефона
+
+.button-move
+	cursor: pointer
+	border: none
+	white-space: nowrap
+	display: inline-flex
+	align-items: center
+	background: #008fd1
+	box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1)
+	//border-radius: 5px
+	height: 45px
+	padding: 0 30px
+	color: #fff
+	font-family: Lato, Arial, sans-serif
+	//text-transform: uppercase
+	text-decoration: none
+	transition: background 0.3s, transform 0.3s, box-shadow 0.3s
+	will-change: transform
+	&:hover
+		background: #4cb2e4
+		box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2)
+		transform: translate3d(0, -2px, 0)
+		color: #fff
+		text-decoration: none
+	&:active
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
+		transform: translate3d(0, 1px, 0)
+
 
 
 
