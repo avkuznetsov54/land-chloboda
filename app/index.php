@@ -17,7 +17,7 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-
+	<!-- <script src="https://maps.api.2gis.ru/2.0/loader.js?lazy=true"></script> -->
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#fff">
 	<!-- Custom Browsers Color End -->
@@ -64,7 +64,8 @@
 								<h1 class="h1">Квартиры в<br>Чистой слободе</h1>
 								<p class="fz2rem">от 5 665 р./мес.*</p>
 								<p class="fz2rem">Оформление ипотеки без комиссий</p>
-								<p class="fz08rem">*платеж по программе «Ипотечные каникулы» от ПАО «БАНК УРАЛСИБ», ставка 11,5 % годовых, с первоначальным
+								<p class="fz08rem">*платеж по программе «Ипотечные каникулы» от ПАО «БАНК УРАЛСИБ», ставка 11,5 % годовых, с
+									первоначальным
 									взносом 20 % на 20 лет</p>
 							</div>
 						</div>
@@ -198,6 +199,53 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="map">
+		<div class="map__bg"></div>
+		<div class="map__body">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-7">
+						<div class="map__body-desc">
+							<div class="map__body-desc-title">Расположение</div>
+							<div class="map__body-desc-text">
+								<b>Чистая слобода</b> - жилой микрорайон комплексной застройки в Новосибирске в Ленинском районе, расположенный на улице Титова.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="map__body-icoloco">
+							<div class="popup-link" data-toggle="modal" data-target="#myModal-map" id="create">
+								<svg version="1.1" id="map-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								 x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;"
+								 xml:space="preserve">
+									<g id="road">
+										<path class="st0" d="M141.98,71.904l21.465,100.993" />
+										<polyline class="st0" points="36.305,137.309 128.621,117.686 128.621,117.686 119.889,76.599 	" />
+										<polyline class="st0" points="141.355,177.59 133.316,139.777 41.001,159.4 	" />
+									</g>
+									<g id="point">
+										<circle class="st1" cx="72.462" cy="55.02" r="13.07" />
+										<path class="st3" d="M102.463,55.02c0,16.569-30,54.98-30,54.98s-30-38.412-30-54.98s13.431-30,30-30 C89.031,25.02,102.463,38.451,102.463,55.02z" />
+									</g>
+								</svg>
+							</div>
+							<div class="modal" id="myModal-map" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
+								<div class="modal-dialog" role="dialog">
+									<div class="modal-content">
+										<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f9a5a6599beda8d9855a227bda0f0bd1087d9be19b9dadd54bb37189e406008&amp;source=constructor" "></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 
 	<div class="container" style="margin-top: 300px;">

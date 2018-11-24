@@ -47,7 +47,7 @@ b, strong
 	line-height: 1.3
 
 .h2
-	font-size: 2.5rem
+	font-size: 2rem
 
 .fz2rem
 	font-size: 2rem
@@ -261,6 +261,106 @@ button:focus
 			margin-bottom: 20px
 			img
 				max-height: 100px
+
+.map
+	position: relative
+	//height: 250px
+	&__bg
+		background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/bg-map.png)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		//background-image: url(../img/bg-map.png)
+		//filter: blur(1px)
+		z-index: -1
+	&__body
+		color: #fff
+		//height: 250px
+		[class^="row align-items-"]
+			min-height: 300px
+		&-desc
+			&-title
+				font-size: 3rem
+		&-icoloco
+			align-items: center
+			justify-content: center
+			display: flex
+			svg
+				height: 150px
+				width: 150px
+				cursor: pointer
+				&:hover
+					background-color: rgba(0, 0, 0, 0.2)
+					transition: background-color .8s
+					border-radius: 50px
+			#map-icon #point
+				//transition: .6s
+				animation: moveupdown 1s infinite
+			#map-icon:hover #point 
+				//transform: translate(0px,-20px)
+				//animation: shake 1s infinite
+			#map-icon .st0
+				fill: none
+				stroke: #FFFFFF
+				stroke-width: 6
+				stroke-linecap: round
+				stroke-linejoin: round
+				stroke-miterlimit: 10
+			#map-icon .st1
+				fill: none
+				stroke: #FFFFFF
+				stroke-width: 6
+				stroke-miterlimit: 10
+			#map-icon .st2
+				fill: none
+			#map-icon .st3
+				fill: none
+				stroke: #FFFFFF
+				stroke-width: 6
+				stroke-linejoin: round
+				stroke-miterlimit: 10
+			#map-icon .bg
+				stroke: none
+				fill: transparent
+
+@keyframes moveupdown
+	0%
+		transform: translate(0px, 0px)
+	// 25%
+	//   transform: translate(0px,-10px)
+	50%
+		transform: translate(0px,-20px)
+	// 75%
+	//   transform: translate(0px,-10px)
+	100%
+		transform: translate(0px, 0px)
+
+.map
+	.modal-dialog
+		height: 100vh
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		align-items: center
+		.modal-content
+			width: 95%
+		iframe
+			width: 100%
+			min-height: calc(100vh*0.8)
+			border: 0
+		button.close
+			position: absolute
+			display: block
+			right: 0
+			top: -30px
+			color: #fff
+
+
 
 
 @import "media" // Always at the end

@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
 		notify: false,
 		// open: false, // открытие в браузере после запуска
 		// online: false, // Work Offline Without Internet Connection
-		// tunnel: true, tunnel: "land-chloboda", // Demonstration page: http://projectname.localtunnel.me
+		//tunnel: true, tunnel: "land-chloboda", // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 
@@ -38,6 +38,8 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		//'app/libs/plugins/jquery.magnific-popup.js',
+		'app/libs/bootstrap/js/bootstrap.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
