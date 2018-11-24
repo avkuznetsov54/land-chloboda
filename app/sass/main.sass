@@ -58,6 +58,9 @@ b, strong
 button:focus
 	outline: none
 
+
+// BEGIN HEADER
+
 .header
 	&__top
 		z-index: 20
@@ -175,7 +178,6 @@ button:focus
 					margin-top: 10px
 					font-size: 0.7rem
 
-
 // BEGIN анимация иконки телефона
 .animation-icon-box,
 .animation-icon-box:after,
@@ -239,6 +241,10 @@ button:focus
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
 		transform: translate3d(0, 1px, 0)
 
+// END HEADER
+
+// BEGIN Advantages section
+
 .advantages
 	padding: $gutter-top-section 0
 	color: $accent
@@ -261,6 +267,47 @@ button:focus
 			margin-bottom: 20px
 			img
 				max-height: 100px
+
+// END Advantages section
+
+// BEGIN Media section
+
+.media
+	padding: 0 0 50px
+	color: #008fd1
+	background-color: #f9fbfd
+	.row > div
+		margin-top: 25px
+	&__item
+		user-select: none
+		height: 100%
+		cursor: pointer
+		transition: background 0.3s, transform 0.3s, box-shadow 0.3s
+		box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2)
+		&:hover
+			transform: translate3d(0, -2px, 0)
+			//color: #fff
+			text-decoration: none
+		&:active
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
+			transform: translate3d(0, 1px, 0)
+		&-wrap
+			display: inline-flex
+			//border: 1px solid #0090d6
+			padding: 10px 20px
+		&-icon
+			text-align: center
+			i
+				font-size: 3rem
+			span
+				font-size: 0.8rem
+		&-text
+			line-height: 1.5
+			margin-left: 20px
+
+// END Media section
+
+// BEGIN Map section
 
 .map
 	position: relative
@@ -340,7 +387,7 @@ button:focus
 	100%
 		transform: translate(0px, 0px)
 
-.map
+.map, .media
 	.modal-dialog
 		height: 100vh
 		margin: 0 auto
@@ -360,7 +407,7 @@ button:focus
 			top: -30px
 			color: #fff
 
-
+// END Map section
 
 
 @import "media" // Always at the end

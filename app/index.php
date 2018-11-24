@@ -200,41 +200,77 @@
 		</div>
 	</div>
 
-	<div class="map">
-		<div class="map__bg"></div>
-		<div class="map__body">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-7">
-						<div class="map__body-desc">
-							<div class="map__body-desc-title">Расположение</div>
-							<div class="map__body-desc-text">
-								<b>Чистая слобода</b> - жилой микрорайон комплексной застройки в Новосибирске в Ленинском районе, расположенный на улице Титова.
+	<div class="media">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="media__item" data-toggle="modal" data-target="#myModal-video">
+						<div class="media__item-wrap">
+							<div class="media__item-icon"><i class="fas fa-video"></i><span>видео</span></div>
+							<div class="media__item-text">Сделайте выбор в пользу надежности, юридической чистоты сделки и комфортной жизни
+								в динамично развивающемся микрорайоне.</div>
+						</div>
+					</div>
+					<div class="modal" id="myModal-video" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
+						<div class="modal-dialog" role="dialog">
+							<div class="modal-content">
+								<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"  id="myModal-video-bt"><span aria-hidden="true">&times;</span></button>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/vmhUAv3Y3n0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-5">
-						<div class="map__body-icoloco">
-							<div class="popup-link" data-toggle="modal" data-target="#myModal-map" id="create">
-								<svg version="1.1" id="map-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								 x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;"
-								 xml:space="preserve">
-									<g id="road">
-										<path class="st0" d="M141.98,71.904l21.465,100.993" />
-										<polyline class="st0" points="36.305,137.309 128.621,117.686 128.621,117.686 119.889,76.599 	" />
-										<polyline class="st0" points="141.355,177.59 133.316,139.777 41.001,159.4 	" />
-									</g>
-									<g id="point">
-										<circle class="st1" cx="72.462" cy="55.02" r="13.07" />
-										<path class="st3" d="M102.463,55.02c0,16.569-30,54.98-30,54.98s-30-38.412-30-54.98s13.431-30,30-30 C89.031,25.02,102.463,38.451,102.463,55.02z" />
-									</g>
-								</svg>
-							</div>
-							<div class="modal" id="myModal-map" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
-								<div class="modal-dialog" role="dialog">
-									<div class="modal-content">
-										<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f9a5a6599beda8d9855a227bda0f0bd1087d9be19b9dadd54bb37189e406008&amp;source=constructor" "></iframe>
+				</div>
+				<div class=" col-md-6">
+					<div class="media__item" id="object-images">
+						<div class="media__item-wrap">
+							<div class="media__item-icon"><i class="fas fa-image"></i><span>фото</span></div>
+							<div class="media__item-text">Все квартиры выполнены с отделкой «под ключ», предоставляя возможность
+								заселиться в новую квартиру сразу после получения ключей.</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="map">
+	<div class="map__bg"></div>
+	<div class="map__body">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-7">
+					<div class="map__body-desc">
+						<div class="map__body-desc-title">Расположение</div>
+						<div class="map__body-desc-text">
+							<b>Чистая слобода</b> - жилой микрорайон комплексной застройки в Новосибирске в Ленинском районе,
+							расположенный
+							на улице Титова.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="map__body-icoloco">
+						<div class="popup-link" data-toggle="modal" data-target="#myModal-map" id="create">
+							<svg version="1.1" id="map-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;"
+								xml:space="preserve">
+								<g id="road">
+									<path class="st0" d="M141.98,71.904l21.465,100.993" />
+									<polyline class="st0" points="36.305,137.309 128.621,117.686 128.621,117.686 119.889,76.599 	" />
+									<polyline class="st0" points="141.355,177.59 133.316,139.777 41.001,159.4 	" />
+								</g>
+								<g id="point">
+									<circle class="st1" cx="72.462" cy="55.02" r="13.07" />
+									<path class="st3" d="M102.463,55.02c0,16.569-30,54.98-30,54.98s-30-38.412-30-54.98s13.431-30,30-30 C89.031,25.02,102.463,38.451,102.463,55.02z" />
+								</g>
+							</svg>
+						</div>
+						<div class="modal" id="myModal-map" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
+							<div class="modal-dialog" role="dialog">
+								<div class="modal-content">
+									<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f9a5a6599beda8d9855a227bda0f0bd1087d9be19b9dadd54bb37189e406008&amp;source=constructor"
+										"></iframe>
 									</div>
 								</div>
 							</div>
@@ -248,18 +284,19 @@
 
 
 
-	<div class="container" style="margin-top: 300px;">
-		<div class="row">
-			<div class="col-md-7 align-self-center">
-				<div>Для Нас очень важно что Вы цените своё время!</div>
-			</div>
-			<div class="col-md-5">2222</div>
-		</div>
-	</div>
+	<div class="
+													 container" style="margin-top: 300px;">
+														<div class="row">
+															<div class="col-md-7 align-self-center">
+																<div>Для Нас очень важно что Вы цените своё время!</div>
+															</div>
+															<div class="col-md-5">2222</div>
+														</div>
+												</div>
 
 
 
-	<script src="js/scripts.min.js"></script>
+												<script src="js/scripts.min.js"></script>
 
 </body>
 

@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		//'app/libs/plugins/jquery.magnific-popup.js',
+		'app/libs/plugins/jquery.fancybox.min.js',
 		'app/libs/bootstrap/js/bootstrap.min.js',
 		'app/js/common.js', // Always at the end
 		])
