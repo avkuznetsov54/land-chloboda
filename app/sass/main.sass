@@ -220,7 +220,7 @@ button:focus
 	white-space: nowrap
 	display: inline-flex
 	align-items: center
-	background: #008fd1
+	background: $accent
 	box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1)
 	//border-radius: 5px
 	height: 45px
@@ -274,7 +274,7 @@ button:focus
 
 .media
 	padding: 0 0 50px
-	color: #008fd1
+	color: $accent
 	background-color: #f9fbfd
 	.row > div
 		margin-top: 25px
@@ -408,6 +408,90 @@ button:focus
 			color: #fff
 
 // END Map section
+
+// BEGIN fflats section
+
+.fflats
+	padding: 50px 0
+	&__thumbnail
+		margin: 0 0 30px 0
+		border: 1px solid #ddd
+		//padding: 8px 12px
+		// cursor: pointer
+		padding: 10px 10px 0 10px
+		.owl-carousel
+			//margin: 10px
+		&:hover
+			border: 1px solid $accent
+			transition: border .5s,box-shadow .5s, box-shadow .5s
+			box-shadow: 3px 3px 25px 1px rgba(0,0,0,.2);
+		img
+			width: 100%
+			//height: 230px
+			object-fit: cover
+			//padding: 3px 3px
+		.owl-nav
+			position: absolute
+			top: 45%
+			width: 100%
+			.owl-prev
+				float: left
+			.owl-next
+				float: right
+			span
+				padding: 3px 7px 5px 7px
+				border: 1px solid #ddd
+				//border-radius: 40px
+				background-color: #ddd
+				color: #fff
+				font-size: 1.5rem
+		&:hover span
+			background-color: $accent
+			color: #fff
+			border: 1px solid $accent
+		&-body
+			//padding: 10px
+			.title-flat
+				font-size: 1.5rem
+		&:hover &-body
+			color: $accent
+		&-button
+			min-height: 50px
+			margin: 10px -10px 0
+			border-top: 1px solid #ddd
+			text-align: center
+			cursor: pointer
+			display: flex
+			justify-content: center
+			align-items: center
+			i
+				transform: rotate(-135deg)
+		&:hover &-button
+			border-top: 1px solid $accent
+			background-color: $accent
+			color: #fff
+			font-size: 1.1rem
+			transition: background-color .2s, color .2s, font-size .2s
+			div
+				//transform: rotate(-135deg)
+				animation: movekeyrightleft 1s infinite
+
+@keyframes movekeyrightleft
+	0%
+		//transform: translate(0px, 0px)
+		transform: scale(1)
+	// 25%
+	//   transform: translate(0px,-10px)
+	50%
+		//transform: translate(20px, 0px)
+		transform: scale(1.1)
+	// 75%
+	//   transform: translate(0px,-10px)
+	100%
+		//transform: translate(0px, 0px)
+		transform: scale(1)
+
+// END fflats section
 
 
 @import "media" // Always at the end

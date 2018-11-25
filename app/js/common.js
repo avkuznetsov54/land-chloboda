@@ -13,6 +13,7 @@ $(document).ready(function() {
 	$("div#myModal-video").on('click', function (e) {
 		$("#myModal-video iframe").attr("src", $("#myModal-video iframe").attr("src"));
 	});
+	//////
 
 	// открывает fancybox при нажатии на div
 	$("#object-images").on('click', function () {
@@ -24,9 +25,31 @@ $(document).ready(function() {
 		loop : true
 		});
 	});
+	//////
 
+	// фильтр по квартирам
+	$(".filter-button").click(function () {
+		var value = $(this).attr('data-filter');
+		if (value == "all") {
+				$('.filter').show('1000');
+		}
+		else {
+				$(".filter").not('.' + value).hide('3000');
+				$('.filter').filter('.' + value).show('3000');
+		}
+	});
+	if ($(".filter-button").removeClass("active")) {
+		$(this).removeClass("active");
+	}
+	$(this).addClass("active");
+	//////
 
-	
+	$(".owl-carousel").owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+		dots: false
+	});
 
 	
 
