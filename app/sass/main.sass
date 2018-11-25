@@ -68,6 +68,7 @@ button:focus
 		height: $height-top-line
 		position: fixed
 		width: 100%
+		box-shadow: 0 0 14px 10px rgba(0, 0, 0, 0.2);
 		&-logo
 			height: $height-top-line
 			//position: fixed
@@ -474,7 +475,7 @@ button:focus
 			transition: background-color .2s, color .2s, font-size .2s
 			div
 				//transform: rotate(-135deg)
-				animation: movekeyrightleft 1s infinite
+				animation: movekeyrightleft 1.5s infinite
 
 @keyframes movekeyrightleft
 	0%
@@ -492,6 +493,104 @@ button:focus
 		transform: scale(1)
 
 // END fflats section
+
+// BEGIN Purchase section
+
+.purchase
+	padding: 50px 0
+	color: #008fd1
+	background-color: #f9fbfd
+	&__title
+		text-align: center
+		h2
+			margin: 40px 0
+	.row > .col-md-6
+		margin-top: 25px
+	&__method
+		user-select: none
+		padding: 10px 12px
+		height: 100%
+		background-color: #fff
+		//cursor: pointer
+		transition: background 0.3s, transform 0.3s, box-shadow 0.3s
+		box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2)
+		&:hover
+			transform: translate3d(0, -2px, 0)
+			//color: #fff
+			text-decoration: none
+		&:active
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
+			transform: translate3d(0, 1px, 0)
+		&-title
+			font-size: 1.5rem
+			font-weight: 500
+			text-transform: uppercase
+			span
+				background-color: $accent
+				color: #fff
+				padding: 3px 4px
+
+// END Purchase section
+
+// BEGIN Form section
+
+.request
+	position: relative
+	padding: 50px 0
+	color: #fff
+	&__bg
+		background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url(../img/bg-request.jpg)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		//background-image: url(../img/bg-map.png)
+		//filter: blur(1px)
+		z-index: -1
+	&__body
+		text-align: center
+		&-title
+			h2
+				margin: 40px 0
+			p
+				margin: 30px 0
+				font-size: 1.5rem
+		&-form
+			margin: 30px 0
+			.field
+				display: inline-block
+				position: relative
+				margin-right: 6px
+				input
+					width: 225px
+					font-size: 13px
+					border: transparent
+					//border-radius: 3px
+					background: #ffffff
+					padding: 10px 15px
+					height: 44px
+				i
+					position: absolute
+					right: 10px
+					top: 14px
+					color: #999
+		&-declaration, a
+			color: #949494
+			font-size: 0.8rem
+				
+
+// END Form section
+
+
+
+
+
+
+
 
 
 @import "media" // Always at the end
