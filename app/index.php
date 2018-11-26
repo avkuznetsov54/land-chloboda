@@ -504,14 +504,29 @@
 
 
 
-	<div class="container" style="margin-top: 300px;">
-		<div class="row">
-			<div class="col-md-7 align-self-center">
-				<div>Для Нас очень важно что Вы цените своё время!</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="footer__body-text">
+							<p>1994–2018 © Агентство недвижимости КВАДРОТЕКА™ <span>(OOO "Сибакадемстрой Недвижимость")</span></p>
+							<a href="http://www.sasn.ru/about/personaldata/" target="_blank">Положения об обработке персональных данных</a>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<ul class="footer__body-social">
+							<li><a href="http://vk.com/sasn_nsk" target="_blank"><i class="fab fa-vk"></i></a></li>
+							<li><a href="https://www.facebook.com/groups/kvadroteka/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/kvadroteka/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="http://www.youtube.com/user/wwwwSASNru" target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="https://ok.ru/kvadroteka" target="_blank"><i class="fab fa-odnoklassniki"></i></a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-5">555555</div>
 		</div>
-	</div>
+	</footer>
 
 
 
