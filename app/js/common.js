@@ -1,12 +1,6 @@
 $(function() {
 
-	
-
-});
-
-$(document).ready(function() {
-
-	// Прекращает воспроизведение видео после закрвтия модального окна
+	// BEGIN Прекращает воспроизведение видео после закрвтия модального окна
 	$("#myModal-video-bt").on('click', function (e) {
 		$("#myModal-video iframe").attr("src", $("#myModal-video iframe").attr("src"));
 	});
@@ -25,9 +19,9 @@ $(document).ready(function() {
 		loop : true
 		});
 	});
-	//////
+	////// END
 
-	// фильтр по квартирам
+	// BEGIN фильтр по квартирам
 	$(".filter-button").click(function () {
 		var value = $(this).attr('data-filter');
 		if (value == "all") {
@@ -42,15 +36,29 @@ $(document).ready(function() {
 		$(this).removeClass("active");
 	}
 	$(this).addClass("active");
-	//////
+	////// END
 
+	// BEGIN Включаем Owl Carousel
 	$(".owl-carousel").owlCarousel({
 		items: 1,
 		loop: true,
 		nav: true,
 		dots: false
 	});
+	////// END
 
+	// BEGIN Button Back to top
+  $(window).scroll(function() {
+		if($(this).scrollTop() > $(this).height()) {
+			$('.top-move-bt').addClass('active');
+		}else{
+			$('.top-move-bt').removeClass('active');
+		}
+	});
+	$('.top-move-bt').click(function() {
+		$('html, body').stop().animate({scrollTop:0}, 'slow', 'swing')
+	});
+	////// END
 	
 
 });

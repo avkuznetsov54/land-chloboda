@@ -58,7 +58,6 @@ b, strong
 button:focus
 	outline: none
 
-
 // BEGIN HEADER
 
 .header
@@ -388,26 +387,6 @@ button:focus
 	100%
 		transform: translate(0px, 0px)
 
-.map, .media
-	.modal-dialog
-		height: 100vh
-		margin: 0 auto
-		display: flex
-		justify-content: center
-		align-items: center
-		.modal-content
-			width: 95%
-		iframe
-			width: 100%
-			min-height: calc(100vh*0.8)
-			border: 0
-		button.close
-			position: absolute
-			display: block
-			right: 0
-			top: -30px
-			color: #fff
-
 // END Map section
 
 // BEGIN fflats section
@@ -613,8 +592,113 @@ button:focus
 // END Form section
 
 
+// BEGIN Tuning modal window
 
+.modal-dialog
+	height: 100vh
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	align-items: center
+	.modal-content
+	button.close
+		position: absolute
+		display: block
+		right: 0
+		top: -30px
+		color: #fff
 
+.map, .media
+	.modal-dialog
+		.modal-content
+			width: 95%
+		iframe
+			width: 100%
+			min-height: calc(100vh*0.8)
+			border: 0
+
+#myModal-ekskur, #myModal-cart
+	.modal-content
+		max-width: 400px
+		.modal-body
+			&-title
+				text-align: center
+				font-size: 1.2rem
+				//font-weight: 900
+			form
+				padding: 20px 20px;
+				//width: 80%
+				float: right
+				text-align: center
+				//background: rgba(30, 30, 30, 0.35)
+				border-radius: 5px
+				.field
+					position: relative
+					margin-right: 6px
+					display: block
+					width: 100%
+					input
+						margin-bottom: 20px
+						width: 100%
+						font-size: 13px
+						border: transparent
+						//border-radius: 3px
+						background: #ffffff
+						padding: 10px 15px
+						height: 40px
+						border: 1px solid #e0e0e0
+						transition: 0.2s ease-in
+					.fas
+						position: absolute
+						right: 10px
+						top: 12px
+						color: #999
+				.declaration
+					color: #888888
+					font-size: 0.6rem
+					margin: 20px 0 0 0
+					a
+						color: #888888
+
+// END Tuning modal window
+
+.top-move-bt
+	bottom: 20px
+	cursor: pointer
+	right: -100px
+	position: fixed
+	background-color: #e0e0e0
+	z-index: 12
+	border-radius: 10em
+	color: #666666
+	font-size: 26px
+	width: 50px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	transition: all .3s ease
+	opacity: 0.5
+	i
+		line-height: 0
+	&:hover
+		color: #ffffff
+		background-color: $accent
+		opacity: 1
+		animation: moveupdown_top-move-bt 1s infinite
+	&.active
+		right: 25px
+
+@keyframes moveupdown_top-move-bt
+	0%
+		transform: translate(0px, 0px)
+	// 25%
+	//   transform: translate(0px,-10px)
+	50%
+		transform: translate(0px, 5px)
+	// 75%
+	//   transform: translate(0px, 10px)
+	100%
+		transform: translate(0px, 0px)
 
 
 
