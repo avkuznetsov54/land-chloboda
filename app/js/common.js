@@ -59,6 +59,104 @@ $(function() {
 		$('html, body').stop().animate({scrollTop:0}, 'slow', 'swing')
 	});
 	////// END
-	
+
+	// BEGIN функция маски телефона
+  function loadMaskphone () {
+    $('.tel').keypress(function(key) { if(key.charCode < 48 || key.charCode > 57) return false; });
+    $(".tel").mask("9 (999) 999-99-99");
+    
+    // окрашиваем border в #1fb450 цвет
+    var maxnumphone = 17; // максимум символов
+    $('.phone-form').keyup(function(){
+		 var count = $(this).val().length; // кол-во уже введенных символов
+		 var num = maxnumphone - count; // кол-во символов, которое еще можно ввести
+		 if(num === 0){
+			 $(this).attr('style', 'border:1px solid #1fb450;color:#1fb450;');
+			 $(this).siblings('.fas').attr('style', 'color:#1fb450'); 
+			 console.log('1fb450');
+		 }else{
+		 	$(this).attr('style', '');
+		 	$(this).siblings('.fas').attr('style', '');
+		 }
+	});
+	$('.nameclient-form').keyup(function(){
+		 var count = $(this).val().length; // кол-во уже введенных символов
+		 //var num = maxnumphone - count; // кол-во символов, которое еще можно ввести
+		 if(count >= 2){
+			 $(this).attr('style', 'border:1px solid #1fb450;color:#1fb450;');
+			 $(this).siblings('.fas').attr('style', 'color:#1fb450'); 
+			 
+		 }else{
+		 	$(this).attr('style', '');
+		 	$(this).siblings('.fas').attr('style', '');
+		 }
+	});
+  }
+  loadMaskphone ();
+////// END
+
+// // обработка форм
+$(document).on('submit','.gform', function(e) {
+    e.preventDefault(); // выключаем стандартное действие отправки
+        var form = $(this); // запомним форму в переменной
+
+        var data = form.serialize(); // сериализуем данные формы в строку для отправки
+        
+        $.ajax({ // инициализируем аякс в обработчик для googlesheet
+            url: "core/order-gf.php", // путь до нашего php обработчика, в моем случае он лежит в той же папке что и форма
+            data: data, // данные  которые мы сериализовали
+            type: "POST", // постом
+            dataType: "json", // ответ ждем в формате json
+            beforeSend: function(){ // перед отправкой
+                form.find('button').attr('disabled', true); // отключим кнопку
+            },
+            success: function(data) { // соединение прошло и получен ответ от обработчика
+                // внутри data будет объект, все его ключи и значения повторяют массив который мы вернули php обработчиком в json строке, помимо ok и message можно сувать туда всякие другие вещи
+                if (data.ok) { // если ok != 0 то значит ошибок нет
+                    //form.remove(); // выпилим форму
+                
+                //$('.response').html(data.message); // и покажем сообщение от сервера
+                  
+                  $('.nameclient-form').val(''); 
+                  $('.phone-form').val(''); 
+                  $('.email-form').val(''); 
+                  $('.onlynum').val(''); 
+                  form.find('.phone-form').attr('style', '');
+                  form.find('.phone-form').siblings('.fas').attr('style', '');
+                  form.find('.nameclient-form').attr('style', '');
+                  form.find('.nameclient-form').siblings('.fas').attr('style', '');
+                  $('button.clickclose').click();
+                  
+                swal({
+                  position: 'center',
+                  type: 'success',
+                  title: 'Спасибо за Вашу заявку!',
+                  text: '',
+                  showCloseButton: true,
+                  showConfirmButton: false,
+                  timer: 4500
+                });
+                }else {
+                  form.find('.phone-form').attr('style', data.bord);
+                  form.find('.phone-form').siblings('.fas').attr('style', data.icon);
+                swal({
+                  position: 'center',
+                  type: 'error',
+                  title: 'Нужно вписать телефон!',
+                  showCloseButton: true,
+                  showConfirmButton: false,
+                  timer: 2500
+                });
+                };
+            },
+            error: function(xhr, ajaxOptions, thrownError) { // если ошибка
+                //console.log(arguments); // убрать после дебага
+            }, 
+            complete: function() { // в конце любого исхода
+                form.find('button').prop('disabled', false); // снова включим кнопку
+            }
+        });
+        
+});
 
 });

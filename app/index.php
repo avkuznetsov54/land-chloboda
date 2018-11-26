@@ -73,22 +73,28 @@
 					<div class="col-sm-12 col-md-5 col-lg-5">
 						<div class="header__body-form">
 							<div>
-								<form class="default-form" method="post">
-									<div class="default-form-title">Мы расскажем, как выгодно купить квартиру!</div>
+								<form class="transparent form-zayvka gform">
+									<div class="form-title">Мы расскажем, как выгодно купить квартиру!</div>
+
+									<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
+									<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
+									<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
+									<input type="hidden" name="utm_content" value="<?php $utm_content = $_GET['utm_content']; echo $utm_content; ?>">
+									<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
+
+									<div><input type="hidden" name="field2" value="Заказать звонок"></div>
+									<div><input type="hidden" name="field3" value="header"></div>
+
 									<div class="field">
-										<input type="text" name="name" placeholder="Ваше имя">
+										<input type="text" class="nameclient-form" placeholder="Ваше Имя" name="field5">
 										<i class="fas fa-user"></i>
 									</div>
 									<div class="field">
-										<input type="email" name="email" placeholder="Ваш email">
-										<i class="fas fa-envelope"></i>
-									</div>
-									<div class="field phone">
-										<input type="text" name="tel" class="tel" placeholder="Ваш телефон">
+										<input type="text" class="tel phone-form" placeholder="Ваш телефон" name="field6">
 										<i class="fas fa-phone"></i>
 									</div>
 									<div class="field">
-										<button class="button-move">Отправить</button>
+										<button class="button-move" type="submit">Отправить</button>
 									</div>
 									<p class="declaration">Нажимая на кнопку «ОТПРАВИТЬ», Вы соглашаетесь на обработку <a href="http://www.sasn.ru/about/personaldata/"
 										target="_blank">персональных данных</a></p>
@@ -477,17 +483,27 @@
 						</div>
 						<div class="col-md-10 offset-md-1">
 							<div class="request__body-form">
-								<form class="default-form" method="post">
+								<form class="transparent form-zayvka gform">
+
+									<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
+									<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
+									<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
+									<input type="hidden" name="utm_content" value="<?php $utm_content = $_GET['utm_content']; echo $utm_content; ?>">
+									<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
+
+									<div><input type="hidden" name="field2" value="Заказать экскурсию"></div>
+									<div><input type="hidden" name="field3" value="топ меню"></div>
+
 									<div class="field">
-										<input type="text" name="name" placeholder="Ваше имя">
-										<i class="fa fa-user"></i>
+										<input type="text" class="nameclient-form" placeholder="Ваше Имя" name="field5">
+										<i class="fas fa-user"></i>
 									</div>
 									<div class="field phone">
-										<input type="text" name="tel" class="tel" placeholder="Ваш телефон">
-										<i class="fa fa-phone"></i>
+										<input type="text" class="tel phone-form" placeholder="Ваш телефон" name="field6">
+										<i class="fas fa-phone"></i>
 									</div>
 									<div class="field">
-										<button class="button-move">Отправить</button>
+										<button class="button-move" type="submit">Отправить</button>
 									</div>
 								</form>
 							</div>
@@ -532,7 +548,7 @@
 
 		<!-- Modal заказать экскурсию топ меню-->
 
-		<div class="modal fade" id="myModal-ekskur" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
+		<div class="modal" id="myModal-ekskur" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
 			<div class="modal-dialog" role="dialog">
 				<div class="modal-content">
 					<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -540,71 +556,87 @@
 						<div class="modal-body-title">
 							Отправить заявку
 						</div>
-						<form class="default-form" method="post">
+						<form class="transparent form-zayvka gform">
+
+							<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
+							<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
+							<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
+							<input type="hidden" name="utm_content" value="<?php $utm_content = $_GET['utm_content']; echo $utm_content; ?>">
+							<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
+
+							<div><input type="hidden" name="field2" value="Заказать экскурсию"></div>
+							<div><input type="hidden" name="field3" value="топ меню"></div>
+
 							<div class="field">
-								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="text" class="nameclient-form" placeholder="Ваше Имя" name="field5">
 								<i class="fas fa-user"></i>
 							</div>
 							<div class="field phone">
-								<input type="text" name="tel" class="tel" placeholder="Ваш телефон">
+								<input type="text" class="tel phone-form" placeholder="Ваш телефон" name="field6">
 								<i class="fas fa-phone"></i>
 							</div>
 							<div class="field">
-								<button class="button-move">Отправить</button>
+								<button class="button-move" type="submit">Отправить</button>
 							</div>
 							<p class="declaration">Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку <a href="http://www.sasn.ru/about/personaldata/"
 								target="_blank">персональных данных</a></p>
 							</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal END заказать экскурсию топ меню-->
-
-		<!-- Modal cart flat -->
-
-		<div class="modal fade" id="myModal-cart" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
-			<div class="modal-dialog" role="dialog">
-				<div class="modal-content">
-					<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<div class="modal-body">
-						<div class="modal-body-title">
-							Наши специалисты ответят на любые Ваши вопросы
 						</div>
-						<form class="default-form" method="post">
-							<div class="field">
-								<input type="text" name="name" placeholder="Ваше имя">
-								<i class="fas fa-user"></i>
-							</div>
-							<!-- <div class="field">
-								<input type="email" name="email" placeholder="Ваш email">
-								<i class="fas fa-envelope"></i>
-							</div> -->
-							<div class="field phone">
-								<input type="text" name="tel" class="tel" placeholder="Ваш телефон">
-								<i class="fas fa-phone"></i>
-							</div>
-							<div class="field">
-								<button class="button-move">Отправить</button>
-							</div>
-							<p class="declaration">Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку <a href="http://www.sasn.ru/about/personaldata/"
-								target="_blank">персональных данных</a></p>
-							</form>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Modal END cart flat -->
+			<!-- Modal END заказать экскурсию топ меню-->
 
-		<div class="top-move-bt">
-			<i class="fas fa-angle-double-up"></i>
-		</div>
+			<!-- Modal cart flat -->
+
+			<div class="modal" id="myModal-cart" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
+				<div class="modal-dialog" role="dialog">
+					<div class="modal-content">
+						<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="modal-body">
+							<div class="modal-body-title">
+								Наши специалисты ответят на любые Ваши вопросы
+							</div>
+							<form class="transparent form-zayvka gform">
+
+								<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
+								<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
+								<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
+								<input type="hidden" name="utm_content" value="<?php $utm_content = $_GET['utm_content']; echo $utm_content; ?>">
+								<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
+
+								<div><input type="hidden" name="field2" value="Заказать звонок"></div>
+								<div><input type="hidden" name="field3" value="инфо квартиры"></div>
+
+								<div class="field">
+									<input type="text" class="nameclient-form" placeholder="Ваше Имя" name="field5">
+									<i class="fas fa-user"></i>
+								</div>
+								<div class="field phone">
+									<input type="text" class="tel phone-form" placeholder="Ваш телефон" name="field6">
+									<i class="fas fa-phone"></i>
+								</div>
+								<div class="field">
+									<button class="button-move" type="submit">Отправить</button>
+								</div>
+								<p class="declaration">Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку <a href="http://www.sasn.ru/about/personaldata/"
+									target="_blank">персональных данных</a></p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal END cart flat -->
+
+				<div class="top-move-bt">
+					<i class="fas fa-angle-double-up"></i>
+				</div>
 
 
-		<script src="js/scripts.min.js"></script>
+				<script src="js/scripts.min.js"></script>
 
-	</body>
+			</body>
 
-	</html>
+			</html>
