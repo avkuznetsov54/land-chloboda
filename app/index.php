@@ -209,7 +209,7 @@
 		<div class="media">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<!-- <div class="col-md-6">
 						<div class="media__item" data-toggle="modal" data-target="#myModal-video">
 							<div class="media__item-wrap">
 								<div class="media__item-icon"><i class="fas fa-video"></i><span>видео</span></div>
@@ -227,13 +227,47 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class=" col-md-6">
+						</div> -->
+						<!-- <div class=" col-md-6">
 							<div class="media__item" id="object-images">
 								<div class="media__item-wrap">
 									<div class="media__item-icon"><i class="fas fa-image"></i><span>фото</span></div>
 									<div class="media__item-text">Все квартиры выполнены с отделкой «под ключ», предоставляя возможность
 									заселиться в новую квартиру сразу после получения ключей.</div>
+								</div>
+							</div>
+						</div> -->
+						<div class="col-sm-4 col-md-4">
+						<div class="media__item" data-toggle="modal" data-target="#myModal-video">
+							<div class="media__item-wrap">
+								<div class="media__item-icon"><i class="fas fa-video"></i><span>видео</span></div>
+								<div class="media__item-text">Видео</div>
+							</div>
+						</div>
+						<div class="modal" id="myModal-video" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
+							<div class="modal-dialog" role="dialog">
+								<div class="modal-content">
+									<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close" id="myModal-video-bt"><span
+										aria-hidden="true">&times;</span></button>
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/vmhUAv3Y3n0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<div class="media__item" id="object-photo">
+								<div class="media__item-wrap">
+									<div class="media__item-icon"><i class="fas fa-image"></i><span>фото</span></div>
+									<div class="media__item-text">Фото</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<div class="media__item" id="flats-repairs">
+								<div class="media__item-wrap">
+									<div class="media__item-icon"><i class="fas fa-image"></i><span>ремонт</span></div>
+									<div class="media__item-text">Ремонт</div>
 								</div>
 							</div>
 						</div>

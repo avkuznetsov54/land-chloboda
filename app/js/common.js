@@ -10,10 +10,43 @@ $(function() {
 	//////
 
 	// открывает fancybox при нажатии на div
-	$("#object-images").on('click', function () {
+	$("#object-photo").on('click', function () {
 		$.fancybox.open([
-			{ src  : 'img/gallery/pic_01.jpg', opts : {	caption : 'First caption', thumb   : 'img/gallery/pic_01.jpg'}},
-			{	src  : 'img/gallery/pic_02.jpg', opts : {	caption : 'Second caption', thumb   : 'img/gallery/pic_02.jpg'}}
+			{ src  : 'img/gallery/photo/photo-00001.jpg'},
+			{ src  : 'img/gallery/photo/photo-00002.jpg'},
+			{ src  : 'img/gallery/photo/photo-00003.jpg'},
+			{ src  : 'img/gallery/photo/photo-00004.jpg'},
+			{ src  : 'img/gallery/photo/photo-00005.jpeg'},
+			{ src  : 'img/gallery/photo/photo-00006.jpg'},
+			{ src  : 'img/gallery/photo/photo-00007.jpg'},
+			{ src  : 'img/gallery/photo/photo-00008.jpg'},
+			{ src  : 'img/gallery/photo/photo-00009.jpg'},
+			{ src  : 'img/gallery/photo/photo-00010.jpg'},
+			{ src  : 'img/gallery/photo/photo-00011.jpg'},
+			{ src  : 'img/gallery/photo/photo-00012.jpg'},
+			{ src  : 'img/gallery/photo/photo-00013.jpg'},
+			{ src  : 'img/gallery/photo/photo-00014.jpg'},
+			{ src  : 'img/gallery/photo/photo-00015.jpg'},
+			{ src  : 'img/gallery/photo/photo-00016.jpg'},
+			{ src  : 'img/gallery/photo/photo-00017.jpg'},
+			{ src  : 'img/gallery/photo/photo-00018.jpg'},
+			{ src  : 'img/gallery/photo/photo-00019.jpg'},
+			{ src  : 'img/gallery/photo/photo-00020.png'}
+		], 
+		{
+		loop : true
+		});
+	});
+	$("#flats-repairs").on('click', function () {
+		$.fancybox.open([
+			{ src  : 'img/gallery/repairs/repairs-1.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-2.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-3.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-4.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-5.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-6.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-7.jpg'},
+			{ src  : 'img/gallery/repairs/repairs-8.jpg'}		
 		], 
 		{
 		loop : true
@@ -71,7 +104,7 @@ $(function() {
 		 var count = $(this).val().length; // кол-во уже введенных символов
 		 var num = maxnumphone - count; // кол-во символов, которое еще можно ввести
 		 if(num === 0){
-			 $(this).attr('style', 'border:1px solid #1fb450;color:#1fb450;');
+			 $(this).attr('style', 'border:1px solid #1fb450;color:#1fb450;font-weight:500;');
 			 $(this).siblings('.fas').attr('style', 'color:#1fb450'); 
 			 console.log('1fb450');
 		 }else{
@@ -83,7 +116,7 @@ $(function() {
 		 var count = $(this).val().length; // кол-во уже введенных символов
 		 //var num = maxnumphone - count; // кол-во символов, которое еще можно ввести
 		 if(count >= 2){
-			 $(this).attr('style', 'border:1px solid #1fb450;color:#1fb450;');
+			 $(this).attr('style', 'border:1px solid #1fb450;color:#1fb450;font-weight:500;');
 			 $(this).siblings('.fas').attr('style', 'color:#1fb450'); 
 			 
 		 }else{

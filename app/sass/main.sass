@@ -293,18 +293,26 @@ button:focus
 			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
 			transform: translate3d(0, 1px, 0)
 		&-wrap
-			display: inline-flex
+			//display: inline-flex
 			//border: 1px solid #0090d6
 			padding: 10px 20px
+			display: flex
+			justify-content: center
+			align-items: center
 		&-icon
 			text-align: center
 			i
 				font-size: 3rem
 			span
 				font-size: 0.8rem
+				display: none
 		&-text
-			line-height: 1.5
+			//line-height: 1
 			margin-left: 20px
+			width: 55px
+			// display: flex
+			// justify-content: center
+			// align-items: center
 
 // END Media section
 
@@ -597,7 +605,7 @@ button:focus
 // BEGIN Tuning modal window
 
 body.modal-open[style]
-	padding-right: 0px!important
+	padding-right: 15px!important
 
 .modal-dialog
 	height: 100vh

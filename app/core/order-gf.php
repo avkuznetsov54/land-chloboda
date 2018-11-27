@@ -126,7 +126,7 @@ $headers = "From: $from \r\n";
 // теперь подготовим данные для отправки в гугл форму
 $url = 'https://docs.google.com/forms/d/e/1FAIpQLScuMRT2rG8tBB_WBeBdGdpesqcuxzcWuwN0OXwBu9n5OIPIJg/formResponse'; // куда слать, это атрибут action у гугл формы 
 $data = array(); // массив для отправки в гугл форм
-$data['entry.349942968'] = 'Ясный Берег';  // Landing Page
+$data['entry.349942968'] = 'Чистая Слобода';  // Landing Page
 $data['entry.42396809'] = $field2;         // Тип формы
 $data['entry.1995932799'] = $field3;       // Расположение формы
 $data['entry.762884152'] = $field4;        // Инфо квартиры (если Забронировать)
