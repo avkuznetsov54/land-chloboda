@@ -85,10 +85,11 @@ button:focus
 			&-top
 				text-decoration: none
 				font-size: 1.5rem
-				color: #000
+				color: $accent
 				display: contents
 				&:hover
 					text-decoration: none
+					color: lighten($accent, 5%)
 				i.fa-phone
 					transform: rotate(90deg)
 	&__top-button
@@ -233,7 +234,7 @@ button:focus
 	transition: background 0.3s, transform 0.3s, box-shadow 0.3s
 	will-change: transform
 	&:hover
-		background: #4cb2e4
+		background: lighten($accent, 5%)
 		box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2)
 		transform: translate3d(0, -2px, 0)
 		color: #fff
@@ -486,7 +487,7 @@ button:focus
 
 .purchase
 	padding: 50px 0
-	color: #008fd1
+	color: $accent
 	background-color: #f9fbfd
 	&__title
 		text-align: center
@@ -598,6 +599,8 @@ button:focus
 				i:hover
 					color: #c2c1c1
 					transition: color .4s
+	&__desc
+		font-size: 0.5rem
 
 // END Form section
 

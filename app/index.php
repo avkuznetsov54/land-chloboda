@@ -125,10 +125,10 @@
 									<img src="img/clipboards.png" alt="" class="img-responsive">
 									<div>
 										<div class="header__body-downtext-block-title">
-											ИПОТЕКА от 6% !!!
+											ИПОТЕКА
 										</div>
 										<div class="header__body-downtext-block-anons">
-											Ипотека на строящееся жилье - от 6 тыс. руб в месяц, на сданное в домах — от 20 тыс. руб. в месяц.
+											Помощь в подготовке пакета документации, чтобы купить квартиру на выгодных условиях ипотеки.
 										</div>
 									</div>
 								</div>
@@ -141,7 +141,7 @@
 											Trade-in: обмен старого жилья.
 										</div>
 										<div class="header__body-downtext-block-anons">
-											Вы можете переехать из старой хрущевки в новую квартиру комфорт-класса - всего за 5 дней!
+											Вы можете переехать из старой квартиры в новостройку!
 										</div>
 									</div>
 								</div>
@@ -209,34 +209,6 @@
 		<div class="media">
 			<div class="container">
 				<div class="row">
-					<!-- <div class="col-md-6">
-						<div class="media__item" data-toggle="modal" data-target="#myModal-video">
-							<div class="media__item-wrap">
-								<div class="media__item-icon"><i class="fas fa-video"></i><span>видео</span></div>
-								<div class="media__item-text">Сделайте выбор в пользу надежности, юридической чистоты сделки и комфортной жизни
-								в динамично развивающемся микрорайоне.</div>
-							</div>
-						</div>
-						<div class="modal" id="myModal-video" tabindex="-1" role="dialog" aria-labelledby="my_modalLabel">
-							<div class="modal-dialog" role="dialog">
-								<div class="modal-content">
-									<button type="button" class="close clickclose" data-dismiss="modal" aria-label="Close" id="myModal-video-bt"><span
-										aria-hidden="true">&times;</span></button>
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/vmhUAv3Y3n0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>
-						</div> -->
-						<!-- <div class=" col-md-6">
-							<div class="media__item" id="object-images">
-								<div class="media__item-wrap">
-									<div class="media__item-icon"><i class="fas fa-image"></i><span>фото</span></div>
-									<div class="media__item-text">Все квартиры выполнены с отделкой «под ключ», предоставляя возможность
-									заселиться в новую квартиру сразу после получения ключей.</div>
-								</div>
-							</div>
-						</div> -->
 						<div class="col-sm-4 col-md-4">
 						<div class="media__item" data-toggle="modal" data-target="#myModal-video">
 							<div class="media__item-wrap">
@@ -572,6 +544,13 @@
 								<li><a href="http://www.youtube.com/user/wwwwSASNru" target="_blank"><i class="fab fa-youtube"></i></a></li>
 								<li><a href="https://ok.ru/kvadroteka" target="_blank"><i class="fab fa-odnoklassniki"></i></a></li>
 							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="footer__desc">
+								Информационные материалы и цены размещенные на сайте носят исключительно информационный характер, не являются публичной офертой, не могут рассматриваться, как публичное предложение к заключению сделки.
+							</div>
 						</div>
 					</div>
 				</div>
